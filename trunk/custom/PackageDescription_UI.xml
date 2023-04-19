@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PackageDescription xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0" xsi:noNamespaceSchemaLocation="PackageDescription.xsd" custom="true">
+  <Package type="full" name="Custom Automation UI Templates 01" version="2023.03.28.0" workstation="true">
+    <Description>Custom Automation UI Templates.</Description>
+    <Component>Custom Automation UI Templates 01</Component>
+    <Content>
+      <File type="Package" path="Custom_Automation_UI_Templates.zip"/>
+    </Content>
+  </Package>
+  <Deployment>
+    <Prerequisites>
+    </Prerequisites>
+  </Deployment>
+</PackageDescription>

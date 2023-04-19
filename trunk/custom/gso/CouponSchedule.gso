@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><entities cleanUnusedFields="false" nameSpace="RMB">
+  <beFields>
+    <beField class="BEDATE  " displayCaption="Coupon Ex Dividend Date" entityTypeId="++3qwBhS2etxm003" id="007773ZC2etgS00b" mandatory="0" multiplicity="MULTIPLE_OR_NULL" name="RMBCouponExDividendDate" nameSpace="RMB"/>
+    <beField class="BEDATE  " displayCaption="Coupon Payment Date" entityTypeId="++3qwBhS2etxm003" id="007773ZC2etgS00h" mandatory="0" multiplicity="MULTIPLE_OR_NULL" name="RMBCouponPaymentDate" nameSpace="RMB"/>
+  </beFields>
+  <dataGroups>
+    <dataGroup customInd="0" desc="Coupon Schedule" displayCaption="Coupon Schedule" entityTypeId="++3qwBhS2etxm003" frequencyInd="0" id="004LTZHi2ettS02S" multiplicity="MULTIPLE_OR_NULL" name="CouponSchedule" nameSpace="GSC">
+      <part defNameSpace="RMB" fieldId="007773ZC2etgS00b" id="007773ZC2etgS00j" prntReqdInd="0" seq="10"/>
+      <part defNameSpace="RMB" fieldId="007773ZC2etgS00h" id="007773ZC2etgS00k" prntReqdInd="0" seq="11"/>
+    </dataGroup>
+  </dataGroups>
+  <relations>
+    <relation id="007773ZC2etgS00W" name="FT_T_IPDF-To-FT_T_GNST" nameSpace="RMB" srcTable="FT_T_IPDF" tgtTable="FT_T_GNST">
+      <field fromColumn="INC_PAY_DEF_ID" id="007773ZC2etgS00X" nameSpace="RMB" toColumn="CROSS_REF_ID" type="RELATION_FIELD" valueType="COLUMN"/>
+    </relation>
+  </relations>
+  <occurrences>
+    <occurrence desc="Occurrence for General Statistic" id="007773ZC2etgS00V" ignoreDeleteChildren="false" multiplicity="SINGLE_OR_NULL" name="RMB_IPDF_GNST_EXDATE" nameSpace="RMB" parentId="++4Kq9WS2ettS01E" relationId="007773ZC2etgS00W" table="FT_T_GNST" timeSeries="LOGICAL_DELETE">
+      <field id="007773ZC2etgS00Y" name="STAT_VAL_DTE" nameSpace="RMB"/>
+      <value id="007773ZC2etgS00Z" name="GNST_TBL_ID" nameSpace="RMB" type="FILTER_FIELD" value="IPDF" valueType="CONSTANT"/>
+      <value id="007773ZC2etgS00a" name="STAT_DEF_ID" nameSpace="RMB" type="FILTER_FIELD" value="EXDATE" valueType="CONSTANT"/>
+    </occurrence>
+    <occurrence desc="Occurrence for General Statistic" id="007773ZC2etgS00d" ignoreDeleteChildren="false" multiplicity="SINGLE_OR_NULL" name="RMB_IPDF_GNST_PAYMENTDATE" nameSpace="RMB" parentId="++4Kq9WS2ettS01E" relationId="007773ZC2etgS00W" table="FT_T_GNST" timeSeries="LOGICAL_DELETE">
+      <field id="007773ZC2etgS00e" name="STAT_VAL_DTE" nameSpace="RMB"/>
+      <value id="007773ZC2etgS00f" name="GNST_TBL_ID" nameSpace="RMB" type="FILTER_FIELD" value="IPDF" valueType="CONSTANT"/>
+      <value id="007773ZC2etgS00g" name="STAT_DEF_ID" nameSpace="RMB" type="FILTER_FIELD" value="PYMNTDTE" valueType="CONSTANT"/>
+    </occurrence>
+  </occurrences>
+  <mappings>
+    <mapping beFieldId="007773ZC2etgS00b" groupMapping="0" id="007773ZC2etgS00c" nameSpace="RMB" occFieldId="007773ZC2etgS00Y"/>
+    <mapping beFieldId="007773ZC2etgS00h" groupMapping="0" id="007773ZC2etgS00i" nameSpace="RMB" occFieldId="007773ZC2etgS00e"/>
+  </mappings>
+</entities>

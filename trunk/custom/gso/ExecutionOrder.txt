@@ -1,0 +1,7 @@
+RMBFullInstrument.gso
+FinancialInstitution.gso
+RMBFinancialInstitution.gso
+PublishingLog.gso
+Issuer.gso
+RMBBloombergBulkRequest.gso
+RMBPublishRestrict.gso

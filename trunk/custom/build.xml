@@ -1,0 +1,51 @@
+<project name="Custom Elements Package" default="build" basedir=".">
+	<!-- Specify all paths here, also only specify relative paths -->
+	<property name="root" value="."/>	
+	<property name="base.dir" value="."/>
+	<property name="GS_Version" value="2023.03.29.00"/>
+<target name="init" depends="">
+	</target>	
+	<target name="prepare">
+		<tstamp>
+			<format property="today" pattern="yyyyMMdd" locale="en,UK"/>
+		</tstamp>
+	</target>	
+    <target name="clean">
+		<delete>
+			<fileset dir="${root}">
+				<include name="*CustomElements.zip"/>
+			</fileset>
+		</delete>
+	</target>
+	<target name="build" depends="init,clean">
+		<zip destfile="target/CustomElements.zip">
+			<fileset dir="${root}">
+				<include name="*sql/DML/*"/>
+				<!-- <include name="*gso/*"/> -->
+				<include name="resources/mapping/Bloomberg/*.gsp"/>
+				<include name="resources/xml/feeds/LineByLine.xml"/>
+				<include name="workflows/*.gsp"/>
+				<!--<include name="workflows/PublishingProfiles.gsp"/> -->
+				<!-- <include name="events/WorkflowsEvents.gsp"/> -->
+			
+			</fileset>
+		</zip>
+		<copy file="PackageDescription_GC.xml" tofile="target/PackageDescription.xml" verbose="true" overwrite="true"/>
+		<replace file="target/PackageDescription.xml" token="@@GS_VERSION@@" value="${GS_Version}" />
+		<zip destfile="target/CustomElements_${GS_Version}.zip">
+			<fileset dir="target">
+				<include name="*CustomElements.zip"/>
+				<include name="*PackageDescription.xml"/>		
+			</fileset>
+		</zip>
+		<delete>
+			<fileset dir="${root}">
+				<include name="*CustomElements.zip"/>
+			</fileset>
+			<fileset dir="target/">
+                <include name="*CustomElements.zip"/>
+                <include name="*PackageDescription.xml"/>
+            </fileset>
+		</delete>
+	</target>	
+</project>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><root createdUser="user1" entityName="RMBBloombergBulkRequest" entitySubType="[]" id="%Z4621ZWG1" isDefault="Y" isPublic="Y" screenType="SYSTEMFORM" title="F: RMBBloombergBulkRequest:F">
+<control caption="Bloomberg Bulk Request" columns="2" fullQualPath="" hideDetail="N" id="%Z4H21ZWG1" labelName="" lazyInd="N" orderNum="0" pageSize="0" parentId="" relatedPath="" screenId="%Z4621ZWG1" show="Y" showAsTable="N" showOneBelowAnother="N" type="LAYOUT">
+<config>{"DETAIL_CHART_CONFIG":[],"DISABLE_DELETE_BUTTON":[{"enabled":false}]}</config>
+<control caption="Bloomberg Bulk Request Parent" columns="2" fullQualPath="RMBBloombergBulkRequest.RMBBloombergBulkParentDG" hideDetail="N" id="%Z4I21ZWG1" labelName="" lazyInd="N" orderNum="0" pageSize="0" parentId="%Z4H21ZWG1" relatedPath="" screenId="%Z4621ZWG1" show="Y" showAsTable="N" showOneBelowAnother="N" type="RECORD">
+<config>{"DETAIL_CHART_CONFIG":[],"DISABLE_DELETE_BUTTON":[{"enabled":false}]}</config>
+</control>
+<control caption="Bloomberg Bulk Request Data Group" columns="2" fullQualPath="RMBBloombergBulkRequest.RMBBloombergBulkRequestDG" hideDetail="N" id="%Z4J21ZWG1" isColumnInTable="N" labelName="" lazyInd="N" orderNum="1" pageSize="0" parentId="%Z4H21ZWG1" relatedPath="" screenId="%Z4621ZWG1" show="Y" showAsTable="N" showOneBelowAnother="N" type="LIST">
+<config>{"DETAIL_CHART_CONFIG":[],"DISABLE_DELETE_BUTTON":[{"enabled":false}]}</config>
+</control>
+</control>
+</root>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT field (vendorSource?, where?)*>
+<!ATTLIST field
+	name CDATA #REQUIRED
+	value CDATA #IMPLIED
+	lookup CDATA #IMPLIED
+	valueOf CDATA #IMPLIED
+	dataType (STRING | DATE | DATETIME | NUMBER | DECIMAL | TIME) "STRING"
+	table CDATA #IMPLIED
+>
+<!ELEMENT occurrence (occurrenceFields?, option*, vendorSource?, where?)*>
+<!ATTLIST occurrence
+	table ID #REQUIRED
+	update_equal_rank CDATA #IMPLIED
+	update_empty_field CDATA #IMPLIED
+	update_high_ranked_source CDATA #IMPLIED
+	process_unknown_vendor CDATA #IMPLIED
+>
+<!ELEMENT occurrenceFields (field*)>
+<!ATTLIST occurrenceFields
+	process_unknown_vendor CDATA #IMPLIED
+>
+
+<!ELEMENT option ((occurrenceFields?, where?)*, vendorSource, (occurrenceFields?, where?)*)>
+<!ATTLIST option
+	id ID #REQUIRED
+	update_equal_rank CDATA #IMPLIED
+	update_empty_field CDATA #IMPLIED
+	update_high_ranked_source CDATA #IMPLIED
+	process_unknown_vendor CDATA #IMPLIED
+>
+<!ELEMENT source EMPTY>
+<!ATTLIST source
+	vendor CDATA #REQUIRED
+	rank CDATA #IMPLIED
+	weight CDATA #IMPLIED
+>
+<!ELEMENT vendorSource (source*)>
+<!ATTLIST vendorSource
+	expiration_timespan CDATA #IMPLIED
+>
+<!ELEMENT vsh (occurrence+)>
+<!ATTLIST vsh
+	update_equal_rank (true | false) "true"
+	update_empty_field (none | low_equal | equal) "none"
+	process_unknown_vendor (low | high | none ) "low"
+	update_high_ranked_source (yes | no) "no"
+>
+<!ELEMENT where (field*)>
+<!ATTLIST where
+	match CDATA #IMPLIED
+>

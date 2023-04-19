@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<PackageDescription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="PackageDescription.xsd" version="1.0" minInstallCenterVersion="8.7.1.x" custom="true" destination="Engine Binaries">
+
+	<Package name="Engine Java Rules" type="full" version="2023.03.20.0">
+		<Description>Engine Java Rules</Description>
+		<Component>Engine Java Rules</Component>
+		<Content>
+			<File type="Package" path="EngineJavaRules.tar.gz"/>
+		</Content>
+	</Package>
+
+<Deployment>
+		<Prerequisites>
+			<Product id="Orchestrator" type="GOLDENSOURCE" name="Orchestrator">
+				<Version min="8.8.1.01"/>
+			</Product>
+			<Product id="gsdm" type="GOLDENSOURCE" name="Datamodel GSDM">
+				<Version min="8.8.1.01"/>
+			</Product>			
+		</Prerequisites>
+
+		<Locations>
+			<Location id="GSDMDataModel" type="Database" multiple="true">
+				<Description>The destination where the Datamodel was installed.</Description>
+				<Prerequisites>
+					<or>
+						<Prerequisite id="gsdm"/>
+					</or>
+				</Prerequisites>
+			</Location>
+		</Locations>
+		
+		<Tasks>
+			<tgz name="Untar the Package" description="Untar the package archive temporarily" srcLoc="PackageZip" dest="output/" src="EngineJavaRules.tar.gz"/>
+				
+			
+		</Tasks>
+	</Deployment>
+</PackageDescription>

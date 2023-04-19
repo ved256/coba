@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MappingDef type="MSF" version="1.0">
+  <Options>
+    <Option key="MappingComment"/>
+    <Option key="MappingVersion">1.0.0.0</Option>
+    <Option key="MappingAuthor"/>
+    <Option key="MessageTranslatorVersion">8.1.1.1</Option>
+    <Option key="LastChangedTms">2018-05-19 at 09:15:17 CAT</Option>
+    <Option key="MappingDesignerVersion">8.7.1.03</Option>
+  </Options>
+  <Input vendorType="XML">
+    <Options>
+      <Option key="DecimalSeparator">.</Option>
+      <Option key="DDLName"/>
+      <Option key="TrimFields">BOTH</Option>
+      <Option key="NullIdentifiers"/>
+      <Option key="MessageType"/>
+      <Option key="DateTimeFormat">%Y%M%D%H%I%S</Option>
+    </Options>
+    <Layout>
+      <Override/>
+      <record desc="" ident="RMBCurrencyPairPublish" mandatory="false" mapable="true" multiple="true" name="RMBCurrencyPairPublish">
+        <record desc="" ident="RMBCurrencyPairPublishing" mandatory="false" mapable="true" multiple="true" name="RMBCurrencyPairPublishing">
+          <field decimals="0" desc="" excludedNullIdentifiers="" ident="RMBISIDCurrencyPairIssueID" length="255" mandatory="false" mapable="true" match="false" multiple="false" name="RMBISIDCurrencyPairIssueID" pattern="" pos="0" readonly="false" type="String"/>
+          <field decimals="0" desc="" excludedNullIdentifiers="" ident="RMBISIDPrimCurrIssueID" length="255" mandatory="false" mapable="true" match="false" multiple="false" name="RMBISIDPrimCurrIssueID" pattern="" pos="0" readonly="false" type="String"/>
+          <field decimals="0" desc="" excludedNullIdentifiers="" ident="RMBISIDQuotCurrIssueID" length="255" mandatory="false" mapable="true" match="false" multiple="false" name="RMBISIDQuotCurrIssueID" pattern="" pos="0" readonly="false" type="String"/>
+          <field decimals="0" desc="" excludedNullIdentifiers="" ident="RMBISIDISOPrimCurrIssueID" length="255" mandatory="false" mapable="true" match="false" multiple="false" name="RMBISIDISOPrimCurrIssueID" pattern="" pos="0" readonly="false" type="String"/>
+          <field decimals="0" desc="" excludedNullIdentifiers="" ident="RMBISIDISOQuotCurIssueID" length="255" mandatory="false" mapable="true" match="false" multiple="false" name="RMBISIDISOQuotCurIssueID" pattern="" pos="0" readonly="false" type="String"/>
+        </record>
+      </record>
+    </Layout>
+  </Input>
+  <Output>
+    <Options>
+      <Option key="DateTimeOutputFormat">%M-%D-%Y %H:%I:%S %A</Option>
+      <Option key="OutputEncoding">UTF-8</Option>
+      <Option key="DefaultEmptyNumericsToZero">FALSE</Option>
+    </Options>
+    <MappingFragments/>
+    <OutputDef>
+      <Node messageformat="XML" name="CurrencyPair" type="message">
+        <Options/>
+        <Node name="label" type="element">
+          <expr><![CDATA[return RMBCurrencyPairPublish.RMBCurrencyPairPublishing.RMBISIDCurrencyPairIssueID;]]></expr>
+        </Node>
+        <Node name="pl_currency_base" type="element">
+          <expr><![CDATA[if (OneHasValue(RMBCurrencyPairPublish.RMBCurrencyPairPublishing.RMBISIDPrimCurrIssueID))
+	return RMBCurrencyPairPublish.RMBCurrencyPairPublishing.RMBISIDPrimCurrIssueID;
+else
+	return RMBCurrencyPairPublish.RMBCurrencyPairPublishing.RMBISIDISOPrimCurrIssueID;]]></expr>
+        </Node>
+        <Node name="position_currency_underlying" type="element">
+          <expr><![CDATA[if (OneHasValue(RMBCurrencyPairPublish.RMBCurrencyPairPublishing.RMBISIDQuotCurrIssueID))
+	return RMBCurrencyPairPublish.RMBCurrencyPairPublishing.RMBISIDQuotCurrIssueID;
+else
+	return RMBCurrencyPairPublish.RMBCurrencyPairPublishing.RMBISIDISOQuotCurIssueID;]]></expr>
+        </Node>
+      </Node>
+    </OutputDef>
+  </Output>
+  <Translation/>
+  <Expressions>
+    <Expression enabled="false" ident="KeyStreaming">
+      <expr><![CDATA[return "";]]></expr>
+    </Expression>
+    <Expression enabled="false" ident="RecordIdentifier">
+      <expr><![CDATA[return "";]]></expr>
+    </Expression>
+    <Expression enabled="false" ident="GSDMFiltering">
+      <expr><![CDATA[return "";]]></expr>
+    </Expression>
+    <Expression enabled="false" ident="VDSFiltering">
+      <expr><![CDATA[return "";]]></expr>
+    </Expression>
+  </Expressions>
+</MappingDef>

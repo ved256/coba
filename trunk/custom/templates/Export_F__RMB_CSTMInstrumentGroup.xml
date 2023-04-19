@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><root createdUser="user1" entityName="InstrumentGroup" entitySubType="[]" id="KhuCs&gt;BUO1" isDefault="Y" isPublic="Y" screenType="SYSTEMFORM" title="F: RMB:CSTMInstrumentGroup">
+<control caption="Group Basic Details" columns="2" fullQualPath="InstrumentGroup.GroupBasicDetails" hideDetail="N" id="Ggq8m&amp;gt;d0e1" labelName="" lazyInd="N" orderNum="0" pageSize="0" parentId="" relatedPath="" screenId="KhuCs&amp;gt;BUO1" show="Y" showAsTable="N" showDetailOnTop="N" showOneBelowAnother="N" type="RECORD">
+<config>{"DETAIL_CHART_CONFIG":[]}</config>
+<control caption="Group ID" columns="2" fullQualPath="InstrumentGroup.GroupBasicDetails.InstrumentGroupID" hideDetail="N" id="Ggq9m&amp;gt;d0e1" isColumnInTable="N" labelName="" lazyInd="N" orderNum="0" pageSize="0" parentId="Ggq8m&amp;gt;d0e1" relatedPath="" screenId="KhuCs&amp;gt;BUO1" show="Y" showAsTable="N" showDetailOnTop="N" showOneBelowAnother="N" type="FIELD">
+<config>{"DETAIL_CHART_CONFIG":[]}</config>
+</control>
+<control caption="Group Name" columns="2" fullQualPath="InstrumentGroup.GroupBasicDetails.InstrumentGroupName" hideDetail="N" id="GgqAm&amp;gt;d0e1" isColumnInTable="N" labelName="" lazyInd="N" orderNum="1" pageSize="0" parentId="Ggq8m&amp;gt;d0e1" relatedPath="" screenId="KhuCs&amp;gt;BUO1" show="Y" showAsTable="N" showDetailOnTop="N" showOneBelowAnother="N" type="FIELD">
+<config>{"DETAIL_CHART_CONFIG":[]}</config>
+</control>
+<control caption="Group Purpose" columns="2" fullQualPath="InstrumentGroup.GroupBasicDetails.InstrumentGroupPurpose" hideDetail="N" id="GgqBm&amp;gt;d0e1" isColumnInTable="N" labelName="" lazyInd="N" orderNum="2" pageSize="0" parentId="Ggq8m&amp;gt;d0e1" relatedPath="" screenId="KhuCs&amp;gt;BUO1" show="Y" showAsTable="N" showDetailOnTop="N" showOneBelowAnother="N" type="FIELD">
+<config>{"DETAIL_CHART_CONFIG":[]}</config>
+</control>
+<control caption="Group Description" columns="2" fullQualPath="InstrumentGroup.GroupBasicDetails.InstrumentGroupDescription" hideDetail="N" id="GgqCm&amp;gt;d0e1" isColumnInTable="N" labelName="" lazyInd="N" orderNum="3" pageSize="0" parentId="Ggq8m&amp;gt;d0e1" relatedPath="" screenId="KhuCs&amp;gt;BUO1" show="Y" showAsTable="N" showDetailOnTop="N" showOneBelowAnother="N" type="FIELD">
+<config>{"DETAIL_CHART_CONFIG":[]}</config>
+</control>
+<control caption="Group Created On" columns="2" fullQualPath="InstrumentGroup.GroupBasicDetails.InstrumentGroupCreatedDate" hideDetail="N" id="GgqDm&amp;gt;d0e1" isColumnInTable="N" labelName="" lazyInd="N" orderNum="4" pageSize="0" parentId="Ggq8m&amp;gt;d0e1" relatedPath="" screenId="KhuCs&amp;gt;BUO1" show="Y" showAsTable="N" showDetailOnTop="N" showOneBelowAnother="N" type="FIELD">
+<config>{"DETAIL_CHART_CONFIG":[]}</config>
+</control>
+<control caption="Group Effective Until" columns="2" fullQualPath="InstrumentGroup.GroupBasicDetails.InstrumentGroupEffectiveUntil" hideDetail="N" id="GgqEm&amp;gt;d0e1" isColumnInTable="N" labelName="" lazyInd="N" orderNum="5" pageSize="0" parentId="Ggq8m&amp;gt;d0e1" relatedPath="" screenId="KhuCs&amp;gt;BUO1" show="Y" showAsTable="N" showDetailOnTop="N" showOneBelowAnother="N" type="FIELD">
+<config>{"DETAIL_CHART_CONFIG":[]}</config>
+</control>
+</control>
+<control caption="Group Participants Details" columns="2" fullQualPath="InstrumentGroup.GroupParticipantsDetails" hideDetail="N" id="GgqFm&amp;gt;d0e1" labelName="" lazyInd="N" orderNum="1" pageSize="0" parentId="" relatedPath="" screenId="KhuCs&amp;gt;BUO1" show="Y" showAsTable="N" showDetailOnTop="N" showOneBelowAnother="N" type="LIST">
+<config>{"DETAIL_CHART_CONFIG":[]}</config>
+<control caption="Instrument Type" columns="2" fullQualPath="InstrumentGroup.GroupParticipantsDetails.InstrumentAsParticipants.Base.InstrumentDetails.InstrumentType" hideDetail="N" id="GgqGm&amp;gt;d0e1" isColumnInTable="N" labelName="" lazyInd="N" orderNum="0" pageSize="0" parentId="GgqFm&amp;gt;d0e1" relatedPath="InstrumentGroup.GroupParticipantsDetails.InstrumentAsParticipants" screenId="KhuCs&amp;gt;BUO1" show="Y" showAsTable="N" showDetailOnTop="N" showOneBelowAnother="N" type="FIELD">
+<config>{"DETAIL_CHART_CONFIG":[]}</config>
+</control>
+<control caption="Instrument Name" columns="2" fullQualPath="InstrumentGroup.GroupParticipantsDetails.InstrumentAsParticipants.Base.InstrumentDetails.PreferredInstrumentName" hideDetail="N" id="GgqHm&amp;gt;d0e1" isColumnInTable="N" labelName="" lazyInd="N" orderNum="1" pageSize="0" parentId="GgqFm&amp;gt;d0e1" relatedPath="InstrumentGroup.GroupParticipantsDetails.InstrumentAsParticipants" screenId="KhuCs&amp;gt;BUO1" show="Y" showAsTable="N" showDetailOnTop="N" showOneBelowAnother="N" type="FIELD">
+<config>{"TEMPLATE_FLD_PRPT_CONFIG":[{"IS_REL_EDITABLE":"false"}],"DETAIL_CHART_CONFIG":[]}</config>
+</control>
+<control caption="Preferred Instrument Identifier Type" columns="2" fullQualPath="InstrumentGroup.GroupParticipantsDetails.InstrumentAsParticipants.Base.InstrumentDetails.PreferredIdentifierType" hideDetail="N" id="GgqIm&amp;gt;d0e1" isColumnInTable="N" labelName="" lazyInd="N" orderNum="2" pageSize="0" parentId="GgqFm&amp;gt;d0e1" relatedPath="InstrumentGroup.GroupParticipantsDetails.InstrumentAsParticipants" screenId="KhuCs&amp;gt;BUO1" show="Y" showAsTable="N" showDetailOnTop="N" showOneBelowAnother="N" type="FIELD">
+<config>{"DETAIL_CHART_CONFIG":[]}</config>
+</control>
+<control caption="Preferred Instrument Identifier" columns="2" fullQualPath="InstrumentGroup.GroupParticipantsDetails.InstrumentAsParticipants.Base.InstrumentDetails.PreferredIdentifierValue" hideDetail="N" id="GgqJm&amp;gt;d0e1" isColumnInTable="N" labelName="" lazyInd="N" orderNum="3" pageSize="0" parentId="GgqFm&amp;gt;d0e1" relatedPath="InstrumentGroup.GroupParticipantsDetails.InstrumentAsParticipants" screenId="KhuCs&amp;gt;BUO1" show="Y" showAsTable="N" showDetailOnTop="N" showOneBelowAnother="N" type="FIELD">
+<config>{"DETAIL_CHART_CONFIG":[]}</config>
+</control>
+<control caption="Group Name" columns="2" fullQualPath="InstrumentGroup.GroupParticipantsDetails.GroupAsParticipant.InstrumentGroup.GroupBasicDetails.InstrumentGroupName" hideDetail="N" id="GgqKm&amp;gt;d0e1" isColumnInTable="N" labelName="" lazyInd="N" orderNum="4" pageSize="0" parentId="GgqFm&amp;gt;d0e1" relatedPath="InstrumentGroup.GroupParticipantsDetails.GroupAsParticipant" screenId="KhuCs&amp;gt;BUO1" show="Y" showAsTable="N" showDetailOnTop="N" showOneBelowAnother="N" type="FIELD">
+<config>{"TEMPLATE_FLD_PRPT_CONFIG":[{"IS_REL_EDITABLE":"false"}],"DETAIL_CHART_CONFIG":[]}</config>
+</control>
+<control caption="Participant Purpose" columns="2" fullQualPath="InstrumentGroup.GroupParticipantsDetails.InstrumentGroupParticipantPurpose" hideDetail="N" id="GgqLm&amp;gt;d0e1" isColumnInTable="N" labelName="" lazyInd="N" orderNum="5" pageSize="0" parentId="GgqFm&amp;gt;d0e1" relatedPath="" screenId="KhuCs&amp;gt;BUO1" show="Y" showAsTable="N" showDetailOnTop="N" showOneBelowAnother="N" type="FIELD">
+<config>{"DETAIL_CHART_CONFIG":[]}</config>
+</control>
+<control caption="Participant Description" columns="2" fullQualPath="InstrumentGroup.GroupParticipantsDetails.InstrumentGroupParticipantDescription" hideDetail="N" id="GgqMm&amp;gt;d0e1" isColumnInTable="N" labelName="" lazyInd="N" orderNum="6" pageSize="0" parentId="GgqFm&amp;gt;d0e1" relatedPath="" screenId="KhuCs&amp;gt;BUO1" show="Y" showAsTable="N" showDetailOnTop="N" showOneBelowAnother="N" type="FIELD">
+<config>{"DETAIL_CHART_CONFIG":[]}</config>
+</control>
+<control caption="Participant Created On" columns="2" fullQualPath="InstrumentGroup.GroupParticipantsDetails.InstrumentGroupParticipantCreatedOn" hideDetail="N" id="GgqNm&amp;gt;d0e1" isColumnInTable="N" labelName="" lazyInd="N" orderNum="7" pageSize="0" parentId="GgqFm&amp;gt;d0e1" relatedPath="" screenId="KhuCs&amp;gt;BUO1" show="Y" showAsTable="N" showDetailOnTop="N" showOneBelowAnother="N" type="FIELD">
+<config>{"DETAIL_CHART_CONFIG":[]}</config>
+</control>
+<control caption="Participant Effective Until" columns="2" fullQualPath="InstrumentGroup.GroupParticipantsDetails.InstrumentGroupParticipantEffectiveUntil" hideDetail="N" id="GgqOm&amp;gt;d0e1" isColumnInTable="N" labelName="" lazyInd="N" orderNum="8" pageSize="0" parentId="GgqFm&amp;gt;d0e1" relatedPath="" screenId="KhuCs&amp;gt;BUO1" show="Y" showAsTable="N" showDetailOnTop="N" showOneBelowAnother="N" type="FIELD">
+<config>{"DETAIL_CHART_CONFIG":[]}</config>
+</control>
+</control>
+</root>

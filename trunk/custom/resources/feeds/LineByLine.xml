@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vendor-definition>
+    <name>LineByLine</name>
+    <encoding>ISO-8859-15</encoding>
+    <messageSplitter type="com.j2fe.feeds.generic.splitters.LineSplitter"/>
+</vendor-definition>

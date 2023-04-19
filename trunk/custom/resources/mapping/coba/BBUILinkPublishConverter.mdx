@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MappingDef type="MSF" version="1.0">
+  <Options>
+    <Option key="MappingComment"/>
+    <Option key="MappingVersion">1.0.0.0</Option>
+    <Option key="MappingAuthor"/>
+    <Option key="MessageTranslatorVersion">8.1.1.1</Option>
+    <Option key="LastChangedTms">2018-05-16 at 11:16:59 CAT</Option>
+    <Option key="MappingDesignerVersion">8.7.1.03</Option>
+  </Options>
+  <Input vendorType="XML">
+    <Options>
+      <Option key="DecimalSeparator">.</Option>
+      <Option key="DDLName"/>
+      <Option key="TrimFields">BOTH</Option>
+      <Option key="NullIdentifiers"/>
+      <Option key="MessageType"/>
+      <Option key="DateTimeFormat">%Y%M%D%H%I%S</Option>
+    </Options>
+    <Layout>
+      <Override/>
+      <record desc="" ident="RMBULLinkPublish" mandatory="false" mapable="true" multiple="true" name="RMBULLinkPublish">
+        <record desc="" ident="RMBBBULlinkPublish" mandatory="false" mapable="true" multiple="true" name="RMBBBULlinkPublish">
+          <field decimals="0" desc="" excludedNullIdentifiers="" ident="RMBBBCurrency" length="255" mandatory="false" mapable="true" match="false" multiple="false" name="RMBBBCurrency" pattern="" pos="0" readonly="false" type="String"/>
+          <field decimals="0" desc="" excludedNullIdentifiers="" ident="RMBBBCusipIdentifier" length="255" mandatory="false" mapable="true" match="false" multiple="false" name="RMBBBCusipIdentifier" pattern="" pos="0" readonly="false" type="String"/>
+          <field decimals="0" desc="" excludedNullIdentifiers="" ident="RMBBBIssuerName" length="255" mandatory="false" mapable="true" match="false" multiple="false" name="RMBBBIssuerName" pattern="" pos="0" readonly="false" type="String"/>
+          <field decimals="0" desc="" excludedNullIdentifiers="" ident="RMBBBMaturityExpiration" length="255" mandatory="false" mapable="true" match="false" multiple="false" name="RMBBBMaturityExpiration" pattern="" pos="0" readonly="false" type="String"/>
+          <field decimals="0" desc="" excludedNullIdentifiers="" ident="RMBBBTickerIdentifier" length="255" mandatory="false" mapable="true" match="false" multiple="false" name="RMBBBTickerIdentifier" pattern="" pos="0" readonly="false" type="String"/>
+          <field decimals="0" desc="" excludedNullIdentifiers="" ident="RMBCountryISO" length="255" mandatory="false" mapable="true" match="false" multiple="false" name="RMBCountryISO" pattern="" pos="0" readonly="false" type="String"/>
+          <field decimals="0" desc="" excludedNullIdentifiers="" ident="RMBIDBBIdentifier" length="255" mandatory="false" mapable="true" match="false" multiple="false" name="RMBIDBBIdentifier" pattern="" pos="0" readonly="false" type="String"/>
+          <field decimals="0" desc="" excludedNullIdentifiers="" ident="RMBInstrumentDescription" length="255" mandatory="false" mapable="true" match="false" multiple="false" name="RMBInstrumentDescription" pattern="" pos="0" readonly="false" type="String"/>
+          <field decimals="0" desc="" excludedNullIdentifiers="" ident="RMBIsinIdentifier" length="255" mandatory="false" mapable="true" match="false" multiple="false" name="RMBIsinIdentifier" pattern="" pos="0" readonly="false" type="String"/>
+        </record>
+      </record>
+    </Layout>
+  </Input>
+  <Output>
+    <Options>
+      <Option key="DateTimeOutputFormat">%M-%D-%Y %H:%I:%S %A</Option>
+      <Option key="OutputEncoding">UTF-8</Option>
+      <Option key="DefaultEmptyNumericsToZero">FALSE</Option>
+    </Options>
+    <MappingFragments/>
+    <OutputDef>
+      <Node messageformat="XML" name="BOND" type="message">
+        <Options/>
+        <Node name="InstrumentDescription" type="element">
+          <expr><![CDATA[return RMBULLinkPublish.RMBBBULlinkPublish.RMBInstrumentDescription;]]></expr>
+        </Node>
+        <Node name="Description" type="element"/>
+        <Node name="InstrumentCode" type="element">
+          <expr><![CDATA[return RMBULLinkPublish.RMBBBULlinkPublish.RMBBBTickerIdentifier;]]></expr>
+        </Node>
+        <Node name="CountryCode" type="element">
+          <expr><![CDATA[return RMBULLinkPublish.RMBBBULlinkPublish.RMBCountryISO;]]></expr>
+        </Node>
+        <Node name="CurrencyCode" type="element">
+          <expr><![CDATA[return RMBULLinkPublish.RMBBBULlinkPublish.RMBBBCurrency;]]></expr>
+        </Node>
+        <Node name="InstrumentType" type="element">
+          <expr><![CDATA[return "Bonds";]]></expr>
+        </Node>
+        <Node name="IsinCode" type="element">
+          <expr><![CDATA[return RMBULLinkPublish.RMBBBULlinkPublish.RMBIsinIdentifier;]]></expr>
+        </Node>
+        <Node name="MaturityDate" type="element">
+          <expr><![CDATA[return ReformatDateTime(SubString(RMBULLinkPublish.RMBBBULlinkPublish.RMBBBMaturityExpiration, 1, 10), "%Y-%M-%D", "%M/%D/%Y");]]></expr>
+        </Node>
+        <Node name="IssuerName" type="element">
+          <expr><![CDATA[return RMBULLinkPublish.RMBBBULlinkPublish.RMBBBIssuerName;]]></expr>
+        </Node>
+        <Node name="Exchanges" type="element"/>
+        <Node name="Cusip" type="element">
+          <expr><![CDATA[return RMBULLinkPublish.RMBBBULlinkPublish.RMBBBCusipIdentifier;]]></expr>
+        </Node>
+        <Node name="BloombergId" type="element">
+          <expr><![CDATA[return RMBULLinkPublish.RMBBBULlinkPublish.RMBIDBBIdentifier;]]></expr>
+        </Node>
+      </Node>
+    </OutputDef>
+  </Output>
+  <Translation/>
+  <Expressions>
+    <Expression enabled="false" ident="KeyStreaming">
+      <expr><![CDATA[return "";]]></expr>
+    </Expression>
+    <Expression enabled="false" ident="RecordIdentifier">
+      <expr><![CDATA[return "";]]></expr>
+    </Expression>
+    <Expression enabled="false" ident="GSDMFiltering">
+      <expr><![CDATA[return "";]]></expr>
+    </Expression>
+    <Expression enabled="false" ident="VDSFiltering">
+      <expr><![CDATA[return "";]]></expr>
+    </Expression>
+  </Expressions>
+</MappingDef>

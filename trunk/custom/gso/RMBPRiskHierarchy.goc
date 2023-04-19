@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><configurations cleanUnusedFields="false" nameSpace="RMB">
+  <policies>
+    <policy config="N" dgdpid="006-uPjC2etgS005" entityId="006-uPjC2etgS00Y" id="++8beQRS2etdu003" name="RiskHierarchyMandateMurex" nameSpace="RMB" type="ALL_FOR_RELATION">
+      <part dgdpid="006-uPjC2etgS005" id="++8beQRS2etdu004" index="0" nameSpace="RMB" ruleid="++8beQRS2etdu006" type="EXECUTE_RULE"/>
+    </policy>
+  </policies>
+</configurations>

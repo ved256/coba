@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><root createdUser="user1" entityName="RequestReplyPublishingLog" entitySubType="[]" id="ugw4o&gt;tc81" isDefault="Y" isPublic="Y" screenType="SYSTEMFORM" title="F: RMB : Request Reply Details">
+<control caption="Request Reply Log" columns="2" fullQualPath="RequestReplyPublishingLog.RequestReply" hideDetail="N" id="ugw*o&amp;gt;tc81" labelName="" lazyInd="N" orderNum="0" pageSize="0" parentId="" relatedPath="" screenId="ugw4o&amp;gt;tc81" show="Y" showAsTable="N" showOneBelowAnother="N" type="RECORD">
+<config>{"DETAIL_CHART_CONFIG":[],"DISABLE_DELETE_BUTTON":[{"enabled":false}]}</config>
+<control caption="Correlation ID" columns="2" fullQualPath="RequestReplyPublishingLog.RequestReply.RMBCorrelationId" hideDetail="N" id="ugw-o&amp;gt;tc81" isColumnInTable="N" labelName="" lazyInd="N" orderNum="0" pageSize="0" parentId="ugw*o&amp;gt;tc81" relatedPath="" screenId="ugw4o&amp;gt;tc81" show="Y" showAsTable="N" showOneBelowAnother="N" type="FIELD">
+<config>{"DETAIL_CHART_CONFIG":[],"DISABLE_DELETE_BUTTON":[{"enabled":false}]}</config>
+</control>
+<control caption="Header Information" columns="2" fullQualPath="RequestReplyPublishingLog.RequestReply.RMBHeaderInformation" hideDetail="N" id="ugw.o&amp;gt;tc81" isColumnInTable="N" labelName="" lazyInd="N" orderNum="1" pageSize="0" parentId="ugw*o&amp;gt;tc81" relatedPath="" screenId="ugw4o&amp;gt;tc81" show="Y" showAsTable="N" showOneBelowAnother="N" type="FIELD">
+<config>{"DETAIL_CHART_CONFIG":[],"DISABLE_DELETE_BUTTON":[{"enabled":false}]}</config>
+</control>
+<control caption="Published Message" columns="2" fullQualPath="RequestReplyPublishingLog.RequestReply.RMBPublishedEntity" hideDetail="N" id="ugw/o&amp;gt;tc81" isColumnInTable="N" labelName="" lazyInd="N" orderNum="2" pageSize="0" parentId="ugw*o&amp;gt;tc81" relatedPath="" screenId="ugw4o&amp;gt;tc81" show="Y" showAsTable="N" showOneBelowAnother="N" type="FIELD">
+<config>{"DETAIL_CHART_CONFIG":[],"DISABLE_DELETE_BUTTON":[{"enabled":false}]}</config>
+</control>
+<control caption="Publishing Date" columns="2" fullQualPath="RequestReplyPublishingLog.RequestReply.RMBPublishingDate" hideDetail="N" id="ugw(o&amp;gt;tc81" isColumnInTable="N" labelName="" lazyInd="N" orderNum="3" pageSize="0" parentId="ugw*o&amp;gt;tc81" relatedPath="" screenId="ugw4o&amp;gt;tc81" show="Y" showAsTable="N" showOneBelowAnother="N" type="FIELD">
+<config>{"DETAIL_CHART_CONFIG":[],"DISABLE_DELETE_BUTTON":[{"enabled":false}]}</config>
+</control>
+<control caption="Publishing Status" columns="2" fullQualPath="RequestReplyPublishingLog.RequestReply.RMBPublishingStatus" hideDetail="N" id="ugw)o&amp;gt;tc81" isColumnInTable="N" labelName="" lazyInd="N" orderNum="4" pageSize="0" parentId="ugw*o&amp;gt;tc81" relatedPath="" screenId="ugw4o&amp;gt;tc81" show="Y" showAsTable="N" showOneBelowAnother="N" type="FIELD">
+<config>{"DETAIL_CHART_CONFIG":[],"DISABLE_DELETE_BUTTON":[{"enabled":false}]}</config>
+</control>
+<control caption="Request Date Time" columns="2" fullQualPath="RequestReplyPublishingLog.RequestReply.RMBRequestDatetime" hideDetail="N" id="ugw~o&amp;gt;tc81" isColumnInTable="N" labelName="" lazyInd="N" orderNum="5" pageSize="0" parentId="ugw*o&amp;gt;tc81" relatedPath="" screenId="ugw4o&amp;gt;tc81" show="Y" showAsTable="N" showOneBelowAnother="N" type="FIELD">
+<config>{"DETAIL_CHART_CONFIG":[],"DISABLE_DELETE_BUTTON":[{"enabled":false}]}</config>
+</control>
+<control caption="Request Identifier" columns="2" fullQualPath="RequestReplyPublishingLog.RequestReply.RMBRequestId" hideDetail="N" id="ugw?o&amp;gt;tc81" isColumnInTable="N" labelName="" lazyInd="N" orderNum="6" pageSize="0" parentId="ugw*o&amp;gt;tc81" relatedPath="" screenId="ugw4o&amp;gt;tc81" show="Y" showAsTable="N" showOneBelowAnother="N" type="FIELD">
+<config>{"DETAIL_CHART_CONFIG":[],"DISABLE_DELETE_BUTTON":[{"enabled":false}]}</config>
+</control>
+<control caption="Request Id Context Type" columns="2" fullQualPath="RequestReplyPublishingLog.RequestReply.RMBRequestIdContextType" hideDetail="N" id="ugw&amp;lt;o&amp;gt;tc81" isColumnInTable="N" labelName="" lazyInd="N" orderNum="7" pageSize="0" parentId="ugw*o&amp;gt;tc81" relatedPath="" screenId="ugw4o&amp;gt;tc81" show="Y" showAsTable="N" showOneBelowAnother="N" type="FIELD">
+<config>{"DETAIL_CHART_CONFIG":[],"DISABLE_DELETE_BUTTON":[{"enabled":false}]}</config>
+</control>
+<control caption="Source System" columns="2" fullQualPath="RequestReplyPublishingLog.RequestReply.RMBRequestSystem" hideDetail="N" id="ugw&amp;gt;o&amp;gt;tc81" isColumnInTable="N" labelName="" lazyInd="N" orderNum="8" pageSize="0" parentId="ugw*o&amp;gt;tc81" relatedPath="" screenId="ugw4o&amp;gt;tc81" show="Y" showAsTable="N" showOneBelowAnother="N" type="FIELD">
+<config>{"DETAIL_CHART_CONFIG":[],"DISABLE_DELETE_BUTTON":[{"enabled":false}]}</config>
+</control>
+<control caption="Published Topic Information" columns="2" fullQualPath="RequestReplyPublishingLog.RequestReply.RMBRequestTopicInformation" hideDetail="N" id="ugw0p&amp;gt;tc81" isColumnInTable="N" labelName="" lazyInd="N" orderNum="9" pageSize="0" parentId="ugw*o&amp;gt;tc81" relatedPath="" screenId="ugw4o&amp;gt;tc81" show="Y" showAsTable="N" showOneBelowAnother="N" type="FIELD">
+<config>{"DETAIL_CHART_CONFIG":[],"DISABLE_DELETE_BUTTON":[{"enabled":false}]}</config>
+</control>
+<control caption="Requested Message" columns="2" fullQualPath="RequestReplyPublishingLog.RequestReply.RMBRequestedMessage" hideDetail="N" id="ugw1p&amp;gt;tc81" isColumnInTable="N" labelName="" lazyInd="N" orderNum="10" pageSize="0" parentId="ugw*o&amp;gt;tc81" relatedPath="" screenId="ugw4o&amp;gt;tc81" show="Y" showAsTable="N" showOneBelowAnother="N" type="FIELD">
+<config>{"DETAIL_CHART_CONFIG":[],"DISABLE_DELETE_BUTTON":[{"enabled":false}]}</config>
+</control>
+</control>
+</root>

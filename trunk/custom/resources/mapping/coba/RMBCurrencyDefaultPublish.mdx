@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MappingDef type="MSF" version="1.0">
+  <Options>
+    <Option key="MappingComment"/>
+    <Option key="MappingVersion">1.0.0.0</Option>
+    <Option key="MappingAuthor"/>
+    <Option key="MessageTranslatorVersion">8.1.1.1</Option>
+    <Option key="LastChangedTms">2018-05-15 at 08:38:17 CAT</Option>
+    <Option key="MappingDesignerVersion">8.7.1.03</Option>
+  </Options>
+  <Input vendorType="XML">
+    <Options>
+      <Option key="DecimalSeparator">.</Option>
+      <Option key="DDLName"/>
+      <Option key="TrimFields">BOTH</Option>
+      <Option key="NullIdentifiers"/>
+      <Option key="MessageType"/>
+      <Option key="DateTimeFormat">%Y%M%D%H%I%S</Option>
+    </Options>
+    <Layout>
+      <Override/>
+      <record desc="" ident="RMBCurrencyDefaultPublish" mandatory="false" mapable="true" multiple="true" name="RMBCurrencyDefaultPublish">
+        <record desc="" ident="RMBCCYDefaultPublish" mandatory="false" mapable="true" multiple="true" name="RMBCCYDefaultPublish">
+          <field decimals="0" desc="" excludedNullIdentifiers="" ident="RMBCCYDaysToSettle" length="255" mandatory="false" mapable="true" match="false" multiple="false" name="RMBCCYDaysToSettle" pattern="" pos="0" readonly="false" type="String"/>
+          <field decimals="0" desc="" excludedNullIdentifiers="" ident="RMBISDEIssueName" length="255" mandatory="false" mapable="true" match="false" multiple="false" name="RMBISDEIssueName" pattern="" pos="0" readonly="false" type="String"/>
+          <field decimals="0" desc="" excludedNullIdentifiers="" ident="RMBCCYISINInternal" length="255" mandatory="false" mapable="true" match="false" multiple="false" name="RMBCCYISINInternal" pattern="" pos="0" readonly="false" type="String"/>
+          <field decimals="0" desc="" excludedNullIdentifiers="" ident="RMBCCYDistributionCurrency" length="255" mandatory="false" mapable="true" match="false" multiple="false" name="RMBCCYDistributionCurrency" pattern="" pos="0" readonly="false" type="String"/>
+          <field decimals="0" desc="" excludedNullIdentifiers="" ident="RMBCCYCalendarID" length="255" mandatory="false" mapable="true" match="false" multiple="false" name="RMBCCYCalendarID" pattern="" pos="0" readonly="false" type="String"/>
+          <field decimals="0" desc="" excludedNullIdentifiers="" ident="RMBCCYLongTermDayMonthBasisType" length="255" mandatory="false" mapable="true" match="false" multiple="false" name="RMBCCYLongTermDayMonthBasisType" pattern="" pos="0" readonly="false" type="String"/>
+          <field decimals="0" desc="" excludedNullIdentifiers="" ident="RMBCCYShortTermDayMonthBasisType" length="255" mandatory="false" mapable="true" match="false" multiple="false" name="RMBCCYShortTermDayMonthBasisType" pattern="" pos="0" readonly="false" type="String"/>
+          <field decimals="0" desc="" excludedNullIdentifiers="" ident="RMBCCYCountryID" length="255" mandatory="false" mapable="true" match="false" multiple="false" name="RMBCCYCountryID" pattern="" pos="0" readonly="false" type="String"/>
+          <field decimals="0" desc="" excludedNullIdentifiers="" ident="RMBCCYISOCurrCode" length="255" mandatory="false" mapable="true" match="false" multiple="false" name="RMBCCYISOCurrCode" pattern="" pos="0" readonly="false" type="String"/>
+        </record>
+      </record>
+    </Layout>
+  </Input>
+  <Output>
+    <Options>
+      <Option key="DateTimeOutputFormat">%M-%D-%Y %H:%I:%S %A</Option>
+      <Option key="OutputEncoding">UTF-8</Option>
+      <Option key="DefaultEmptyNumericsToZero">FALSE</Option>
+    </Options>
+    <MappingFragments/>
+    <OutputDef>
+      <Node messageformat="XML" name="CurrencyDefault" type="message">
+        <Options/>
+        <Node name="currency_code_label" type="element">
+          <expr><![CDATA[return RMBCurrencyDefaultPublish.RMBCCYDefaultPublish.RMBCCYISINInternal;]]></expr>
+        </Node>
+        <Node name="currency_code" type="element">
+          <expr><![CDATA[return RMBCurrencyDefaultPublish.RMBCCYDefaultPublish.RMBCCYDistributionCurrency;]]></expr>
+        </Node>
+        <Node name="currency_name" type="element">
+          <expr><![CDATA[return RMBCurrencyDefaultPublish.RMBCCYDefaultPublish.RMBISDEIssueName;]]></expr>
+        </Node>
+        <Node name="currency_area" type="element">
+          <expr><![CDATA[return RMBCurrencyDefaultPublish.RMBCCYDefaultPublish.RMBCCYCountryID;]]></expr>
+        </Node>
+        <Node name="default_day_count_short_term" type="element">
+          <expr><![CDATA[return RMBCurrencyDefaultPublish.RMBCCYDefaultPublish.RMBCCYShortTermDayMonthBasisType;]]></expr>
+        </Node>
+        <Node name="default_day_count_long_term" type="element">
+          <expr><![CDATA[return RMBCurrencyDefaultPublish.RMBCCYDefaultPublish.RMBCCYLongTermDayMonthBasisType;]]></expr>
+        </Node>
+        <Node name="spot_schedule_business_days" type="element">
+          <expr><![CDATA[return RMBCurrencyDefaultPublish.RMBCCYDefaultPublish.RMBCCYDaysToSettle;]]></expr>
+        </Node>
+        <Node name="holiday_calendar" type="element">
+          <expr><![CDATA[return RMBCurrencyDefaultPublish.RMBCCYDefaultPublish.RMBCCYCalendarID;]]></expr>
+        </Node>
+      </Node>
+    </OutputDef>
+  </Output>
+  <Translation/>
+  <Expressions>
+    <Expression enabled="false" ident="KeyStreaming">
+      <expr><![CDATA[return "";]]></expr>
+    </Expression>
+    <Expression enabled="false" ident="RecordIdentifier">
+      <expr><![CDATA[return "";]]></expr>
+    </Expression>
+    <Expression enabled="false" ident="GSDMFiltering">
+      <expr><![CDATA[return "";]]></expr>
+    </Expression>
+    <Expression enabled="false" ident="VDSFiltering">
+      <expr><![CDATA[return "";]]></expr>
+    </Expression>
+  </Expressions>
+</MappingDef>

@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vsh SYSTEM "VSH.dtd">
+<vsh process_unknown_vendor="low" update_empty_field="low_equal" update_equal_rank="true">
+  <occurrence table="ft_t_issu">
+    <vendorSource>
+      <source vendor="BB" rank="1" />
+      <source vendor="BBEXT" rank="2" />
+      <source vendor="MORNSTAR" rank="3" />
+    </vendorSource>
+                <occurrenceFields>
+                  <field name="ft_t_issu.denom_curr_cde" dataType="STRING">
+                        <vendorSource>
+                              <source vendor="RMB" rank="1"/>
+                              <source vendor="BB" rank="2"/>
+                              <source vendor="BBEXT" rank="3"/>
+                              <source vendor="MORNSTAR" rank="4"/>
+                        </vendorSource>
+                  </field>
+                  <field name="ft_t_issu.mat_exp_tms" dataType="STRING">
+                        <vendorSource>
+                              <source vendor="RMB" rank="1"/>
+                              <source vendor="BB" rank="2"/>
+                              <source vendor="BBEXT" rank="3"/>
+                              <source vendor="MORNSTAR" rank="4"/>
+                        </vendorSource>
+                  </field>
+                  <field name="ft_t_issu.iss_tms" dataType="STRING">
+                        <vendorSource>
+                              <source vendor="RMB" rank="1"/>
+                              <source vendor="BB" rank="2"/>
+                              <source vendor="BBEXT" rank="3"/>
+                              <source vendor="MORNSTAR" rank="4"/>
+                        </vendorSource>
+                  </field>
+                  <field name="ft_t_issu.nom_val_unit_camt" dataType="STRING">
+                        <vendorSource>
+                              <source vendor="RMB" rank="1"/>
+                              <source vendor="BB" rank="2"/>
+                              <source vendor="BBEXT" rank="3"/>
+                              <source vendor="MORNSTAR" rank="4"/>
+                        </vendorSource>
+                  </field>
+                  <field name="ft_t_issu.distribution_curr_cde" dataType="STRING">
+                        <vendorSource>
+                              <source vendor="RMB" rank="1"/>
+                              <source vendor="BB" rank="2"/>
+                              <source vendor="BBEXT" rank="3"/>
+                              <source vendor="MORNSTAR" rank="4"/>
+                        </vendorSource>
+                  </field>
+            </occurrenceFields>
+  </occurrence>
+  <occurrence table="ft_t_bdch">
+    <vendorSource>
+      <source vendor="BB" rank="1" />
+      <source vendor="BBEXT" rank="2" />
+      <source vendor="MORNSTAR" rank="3" />
+    </vendorSource>
+                <occurrenceFields>
+                  <field name="ft_t_bdch.dted_tms" dataType="STRING">
+                        <vendorSource>
+                              <source vendor="RMB" rank="1"/>
+                              <source vendor="BB" rank="2"/>
+                              <source vendor="BBEXT" rank="3"/>
+                              <source vendor="MORNSTAR" rank="4"/>
+                        </vendorSource>
+                  </field>
+                  <field name="ft_t_bdch.cpn_typ" dataType="STRING">
+                        <vendorSource>
+                              <source vendor="RMB" rank="1"/>
+                              <source vendor="BB" rank="2"/>
+                              <source vendor="BBEXT" rank="3"/>
+                              <source vendor="MORNSTAR" rank="4"/>
+                        </vendorSource>
+                  </field>
+                  <field name="ft_t_bdch.acrd_in_prcng_bas_typ" dataType="STRING">
+                        <vendorSource>
+                              <source vendor="RMB" rank="1"/>
+                              <source vendor="BB" rank="2"/>
+                              <source vendor="BBEXT" rank="3"/>
+                              <source vendor="MORNSTAR" rank="4"/>
+                        </vendorSource>
+                  </field>
+                  <field name="ft_t_bdch.call_stat_typ" dataType="STRING">
+                        <vendorSource>
+                              <source vendor="RMB" rank="1"/>
+                              <source vendor="BB" rank="2"/>
+                              <source vendor="BBEXT" rank="3"/>
+                              <source vendor="MORNSTAR" rank="4"/>
+                        </vendorSource>
+                  </field>
+                  <field name="ft_t_bdch.call_typ" dataType="STRING">
+                        <vendorSource>
+                              <source vendor="RMB" rank="1"/>
+                              <source vendor="BB" rank="2"/>
+                              <source vendor="BBEXT" rank="3"/>
+                              <source vendor="MORNSTAR" rank="4"/>
+                        </vendorSource>
+                  </field>
+                  <field name="ft_t_bdch.put_typ" dataType="STRING">
+                        <vendorSource>
+                              <source vendor="RMB" rank="1"/>
+                              <source vendor="BB" rank="2"/>
+                              <source vendor="BBEXT" rank="3"/>
+                              <source vendor="MORNSTAR" rank="4"/>
+                        </vendorSource>
+                  </field>
+                  <field name="ft_t_bdch.put_stat_typ" dataType="STRING">
+                        <vendorSource>
+                              <source vendor="RMB" rank="1"/>
+                              <source vendor="BB" rank="2"/>
+                              <source vendor="BBEXT" rank="3"/>
+                              <source vendor="MORNSTAR" rank="4"/>
+                        </vendorSource>
+                  </field>
+                  <field name="ft_t_bdch.covered_ind" dataType="STRING">
+                        <vendorSource>
+                              <source vendor="RMB" rank="1"/>
+                              <source vendor="BB" rank="2"/>
+                              <source vendor="BBEXT" rank="3"/>
+                              <source vendor="MORNSTAR" rank="4"/>
+                        </vendorSource>
+                  </field>
+                  <field name="ft_t_bdch.qt_pct_par_ind" dataType="STRING">
+                        <vendorSource>
+                              <source vendor="RMB" rank="1"/>
+                              <source vendor="BB" rank="2"/>
+                              <source vendor="BBEXT" rank="3"/>
+                              <source vendor="MORNSTAR" rank="4"/>
+                        </vendorSource>
+                  </field>
+            </occurrenceFields>
+  </occurrence>
+  <occurrence table="ft_t_bdst">
+    <vendorSource>
+      <source vendor="BB" rank="1" />
+      <source vendor="BBEXT" rank="2" />
+      <source vendor="MORNSTAR" rank="3" />
+    </vendorSource>
+                <occurrenceFields>
+                  <field name="ft_t_bdst.crrnt_iss_camt" dataType="STRING">
+                        <vendorSource>
+                              <source vendor="RMB" rank="1"/>
+                              <source vendor="BB" rank="2"/>
+                              <source vendor="BBEXT" rank="3"/>
+                              <source vendor="MORNSTAR" rank="4"/>
+                        </vendorSource>
+                  </field>
+                  <field name="ft_t_bdst.outst_camt" dataType="STRING">
+                        <vendorSource>
+                              <source vendor="RMB" rank="1"/>
+                              <source vendor="BB" rank="2"/>
+                              <source vendor="BBEXT" rank="3"/>
+                              <source vendor="MORNSTAR" rank="4"/>
+                        </vendorSource>
+                  </field>
+                  <field name="ft_t_bdst.nxt_call_dte" dataType="STRING">
+                        <vendorSource>
+                              <source vendor="RMB" rank="1"/>
+                              <source vendor="BB" rank="2"/>
+                              <source vendor="BBEXT" rank="3"/>
+                              <source vendor="MORNSTAR" rank="4"/>
+                        </vendorSource>
+                  </field>
+                  <field name="ft_t_bdst.ex_div_dy_qty" dataType="STRING">
+                        <vendorSource>
+                              <source vendor="RMB" rank="1"/>
+                              <source vendor="BB" rank="2"/>
+                              <source vendor="BBEXT" rank="3"/>
+                              <source vendor="MORNSTAR" rank="4"/>
+                        </vendorSource>
+                  </field>
+            </occurrenceFields>
+  </occurrence>
+  <occurrence table="ft_t_iedf">
+    <vendorSource>
+      <source vendor="BB" rank="1" />
+      <source vendor="BBEXT" rank="2" />
+      <source vendor="MORNSTAR" rank="3" />
+    </vendorSource>
+                <occurrenceFields>
+                  <field name="ft_t_iedf.rtfx_cal_id" dataType="STRING">
+                        <vendorSource>
+                              <source vendor="RMB" rank="1"/>
+                              <source vendor="BB" rank="2"/>
+                              <source vendor="BBEXT" rank="3"/>
+                              <source vendor="MORNSTAR" rank="4"/>
+                        </vendorSource>
+                  </field>
+            </occurrenceFields>
+  </occurrence>
+  <occurrence table="ft_t_isas">
+    <vendorSource>
+      <source vendor="BB" rank="1" />
+      <source vendor="BBEXT" rank="2" />
+      <source vendor="MORNSTAR" rank="3" />
+    </vendorSource>
+                <occurrenceFields>
+                  <field name="ft_t_isas.convertible_ind" dataType="STRING">
+                        <vendorSource>
+                              <source vendor="RMB" rank="1"/>
+                              <source vendor="BB" rank="2"/>
+                              <source vendor="BBEXT" rank="3"/>
+                              <source vendor="MORNSTAR" rank="4"/>
+                        </vendorSource>
+                  </field>
+            </occurrenceFields>
+  </occurrence>
+
+    <occurrence table="ft_t_acct">
+     <vendorSource>
+          <source vendor="PHS" rank="1" />
+          <source vendor="CAL" rank="1" />
+          <source vendor="SMT" rank="1" />
+          <source vendor="MUR" rank="1" />
+          <source vendor="OSI" rank="1" />
+          <source vendor="FNS" rank="1" />
+          <source vendor="FNX" rank="1" />
+          <source vendor="SPH" rank="1" />
+          <source vendor="GNV" rank="1" />
+       </vendorSource>
+        <occurrenceFields>
+                  <field name="ft_t_acct.acct_purp_typ" dataType="STRING">
+                        <vendorSource>
+                              <source vendor="PHS" rank="1"/>
+                              <source vendor="CAL" rank="2"/>
+                              <source vendor="SMT" rank="3"/>
+                              <source vendor="OSI" rank="4"/>
+                        </vendorSource>
+                  </field>
+        </occurrenceFields>
+        
+        <occurrenceFields>
+                  <field name="ft_t_acct.acct_nme" dataType="STRING">
+                        <vendorSource>
+                              <source vendor="PHS" rank="1" />
+                              <source vendor="CAL" rank="2" />
+                              <source vendor="SMT" rank="3" />
+                              <source vendor="MUR" rank="4" />
+                              <source vendor="OSI" rank="5" />
+                              <source vendor="FNS" rank="6" />
+                              <source vendor="FNX" rank="7" />
+                              <source vendor="SPH" rank="8" />
+                              <source vendor="GNV" rank="9" />
+                        </vendorSource>
+                  </field>
+        </occurrenceFields>
+        
+        <occurrenceFields>
+                  <field name="ft_t_acct.acct_desc" dataType="STRING">
+                        <vendorSource>
+                              <source vendor="PHS" rank="1" />
+                              <source vendor="CAL" rank="2" />
+                              <source vendor="SMT" rank="3" />
+                              <source vendor="MUR" rank="4" />
+                              <source vendor="OSI" rank="5" />
+                              <source vendor="FNS" rank="6" />
+                              <source vendor="FNX" rank="7" />
+                              <source vendor="SPH" rank="8" />
+                              <source vendor="GNV" rank="9" />
+                        </vendorSource>
+                  </field>
+        </occurrenceFields>
+        
+        
+</occurrence>
+
+<occurrence table="ft_t_aoil">
+	<vendorSource>
+		<source vendor="BB" rank="1" />
+		<source vendor="BBEXT" rank="1" />
+		<source vendor="MORNSTAR" rank="1" />
+		<source vendor="RMB" rank="1"/>
+	</vendorSource>
+</occurrence> 
+  
+<occurrence table="all">
+    <vendorSource>
+      <source vendor="BB" rank="1" />
+      <source vendor="BBEXT" rank="2" />
+      <source vendor="MORNSTAR" rank="3" />
+      <source vendor="PHS" rank="4" />
+      <source vendor="CAL" rank="4" />
+      <source vendor="SMT" rank="4" />
+      <source vendor="MUR" rank="4" />
+      <source vendor="OSI" rank="4" />
+      <source vendor="FNS" rank="4" />
+      <source vendor="FNX" rank="4" />
+      <source vendor="SPH" rank="4" />
+      <source vendor="GNV" rank="4" />
+    </vendorSource>
+      </occurrence>
+  
+</vsh>
